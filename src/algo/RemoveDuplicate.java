@@ -1,5 +1,3 @@
-package studyplan;
-
 import java.util.Arrays;
 
 public class RemoveDuplicate {

@@ -1,4 +1,4 @@
-package studyplan;
+package studyplan.array_string.easy;
 
 import java.util.Arrays;
 

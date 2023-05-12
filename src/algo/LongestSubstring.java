@@ -5,7 +5,25 @@ import java.util.Set;
 public class LongestSubstring {
 
     public static void main(String[] args) {
-        System.out.println(findLongestSubString("abcdefaadrhfkvotu"));
+        System.out.println(findLongestSubString2("aab"));
+    }
+
+    public static int findLongestSubString2(String s) {
+        Set<Character> set = new HashSet<>();
+        int left = 0;
+        int right = 0;
+        int max = 0;
+
+        while (right < s.length()) {
+            if(set.add(s.charAt(right))){
+                max = Math.max(max, set.size());
+                right++;
+            } else {
+                set.remove(s.charAt(left));
+                left++;
+            }
+        }
+        return max;
     }
 
     public int findLengthLongestSubString(String str) {
