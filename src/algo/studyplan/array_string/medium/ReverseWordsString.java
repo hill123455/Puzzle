@@ -12,7 +12,6 @@ public class ReverseWordsString {
 
     public static void main(String[] args) {
         System.out.println(reverseWords("the sky is blue"));
-        System.out.println(reverseWords("the sky is blue"));
     }
 
     public static String reverseWords(String s) {
